@@ -1,0 +1,23 @@
+{
+  "preset": "jest-preset-angular",
+  "setupTestFrameworkScriptFile": "<rootDir>/src/setupJest.ts",
+  "testResultsProcessor": "./node_modules/jest-html-reporter",
+  "coverageDirectory": "<rootDir>/dist/reports/coverage",
+  "collectCoverage": true,
+  "collectCoverageFrom": [
+    "src/app/**/*.ts"
+  ],
+  "coveragePathIgnorePatterns": [
+    "jestGlobalMocks.ts",
+    "setupJest.ts"
+  ],
+  "reporters": [
+    "default",
+    [
+      "jest-junit",
+      {
+        "outputDirectory": "./dist/reports/testResults"
+      }
+    ]
+  ]
+}

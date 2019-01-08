@@ -1,0 +1,7 @@
+{
+  "pageTitle": "Test Suite Reporter",
+  "outputPath": "dist/reports/testResults/jest-html-reporter.html",
+  "includeFailureMsg": true,
+  "includeConsoleLog": true,
+  "sort": "titleAsc"
+}

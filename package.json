@@ -5,9 +5,10 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "test": "ng test",
     "lint": "ng lint",
-    "jest": "jest"
+    "test": "jest",
+    "test:report": "jest --config=jest.report.json",
+    "test:cli": "ng test"
   },
   "private": true,
   "dependencies": {
@@ -38,6 +39,7 @@
     "jasmine-spec-reporter": "~4.2.1",
     "jest": "^23.6.0",
     "jest-html-reporter": "^2.4.2",
+    "jest-junit": "^5.2.0",
     "jest-preset-angular": "^6.0.2",
     "jest-zone-patch": "^0.0.10",
     "karma": "~3.1.1",
