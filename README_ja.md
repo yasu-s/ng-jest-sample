@@ -1,13 +1,13 @@
-# Overview
+# 概要
 
-It is a sample project of Angular + Jest.
+Angular + Jest のサンプルプロジェクトです。
 
-# System requirements
+# 実行環境
 
 * Node.js 10.x
 * Yarn 1.12.x
 
-# Used library
+# 使用ライブラリ
 
 * TypeScript 3.2.x
 * Angular 7.2.x
@@ -16,22 +16,22 @@ It is a sample project of Angular + Jest.
 * jest-preset-angular 6.0.x
 * @angular-builders/jest 7.2.x
 
-# Operation check  
+# 動作確認
 
-## 1. Download Sample
+## 1. サンプルのダウンロード
 
 ```
 git clone git@github.com:yasu-s/ng-jest-sample.git
 ```
 
-## 2. Installing packages  
+## 2. パッケージインストール  
 
 ```
 cd ng-jest-sample
 yarn
 ```
 
-## 3. Launch sample application  
+## 3. サンプルの起動  
 
 ```
 yarn test
