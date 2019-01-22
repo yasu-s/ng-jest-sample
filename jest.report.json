@@ -9,7 +9,8 @@
   ],
   "coveragePathIgnorePatterns": [
     "jestGlobalMocks.ts",
-    "setupJest.ts"
+    "setupJest.ts",
+    "app.module.ts"
   ],
   "reporters": [
     "default",

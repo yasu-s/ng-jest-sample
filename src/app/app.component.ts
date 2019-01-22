@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import { AppService } from './app.service';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +9,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ng-jest-sample';
+  message = '';
+
+  constructor(private appService: AppService) {
+
+  }
+
+  onClick(): void {
+    this.appService.get().subscribe(data => {
+      this.message = data.memo;
+    });
+  }
 }

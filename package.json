@@ -6,7 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "lint": "ng lint",
-    "test": "jest",
+    "test": "jest --verbose",
     "test:report": "jest --config=jest.report.json",
     "test:cli": "ng test"
   },
