@@ -7,6 +7,7 @@
     "build": "ng build",
     "lint": "ng lint",
     "test": "ng test",
+    "test:w": "ng test --watch",
     "test:report": "jest --config=jest.report.json"
   },
   "private": true,

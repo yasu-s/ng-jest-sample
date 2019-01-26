@@ -57,6 +57,10 @@ yarn test
   <td>単体テストを実行します。(Jest)</td>
 </tr>
 <tr>
+  <td>test:w</td>
+  <td>単体テストを実行します。watch mode(Jest)</td>
+</tr>
+<tr>
   <td>test:report</td>
   <td>
     単体テストを実行します。(Jest)<br>  

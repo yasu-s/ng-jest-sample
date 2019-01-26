@@ -58,6 +58,10 @@ yarn test
   <td>Execute the unit test.(Jest)</td>
 </tr>
 <tr>
+  <td>test:w</td>
+  <td>Execute the unit test. Run watch mode.(Jest)</td>
+</tr>
+<tr>
   <td>test:report</td>
   <td>
     Execute the unit test.(Jest)<br>  
