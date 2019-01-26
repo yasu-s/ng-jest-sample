@@ -36,3 +36,34 @@ yarn
 ```
 yarn test
 ```
+
+
+# NPM Script list
+
+<table>
+<tr>
+  <th>script</th>
+  <th>overview</th>
+</tr>
+<tr>
+  <td>start</td>
+  <td>ng serve</td>
+</tr>
+<tr>
+  <td>lint</td>
+  <td>Execute the tslint.</td>
+</tr>
+<tr>
+  <td>test</td>
+  <td>Execute the unit test.(Jest)</td>
+</tr>
+<tr>
+  <td>test:report</td>
+  <td>
+    Execute the unit test.(Jest)<br>  
+    The HTML report of the unit test is output to ./dist/reports/testResults/jest-html-reporter.html.<br>  
+    Output the JUnit format test result file to ./dist/reports/testResults/junit.xml<br>  
+    For code coverage also output to the ./dist/reports/coverage directory.
+  </td>
+</tr>
+</table>

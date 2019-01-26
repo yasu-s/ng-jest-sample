@@ -36,3 +36,33 @@ yarn
 ```
 yarn test
 ```
+
+# NPM Script list
+
+<table>
+<tr>
+  <th>script</th>
+  <th>overview</th>
+</tr>
+<tr>
+  <td>start</td>
+  <td>ng serve</td>
+</tr>
+<tr>
+  <td>lint</td>
+  <td> 	TSLintを実行します。</td>
+</tr>
+<tr>
+  <td>test</td>
+  <td>単体テストを実行します。(Jest)</td>
+</tr>
+<tr>
+  <td>test:report</td>
+  <td>
+    単体テストを実行します。(Jest)<br>  
+    単体テストのHTMLレポートは ./dist/reports/testResults/jest-html-reporter.html に出力します。<br>  
+    JUnit形式のテスト結果ファイルを ./dist/reports/testResults/junit.xml に出力します。<br>  
+    コードカバレッジについても ./dist/reports/coverage ディレクトリに出力します。
+  </td>
+</tr>
+</table>

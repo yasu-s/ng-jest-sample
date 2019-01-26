@@ -1,5 +1,6 @@
 {
   "preset": "jest-preset-angular",
+  "verbose": true,
   "setupTestFrameworkScriptFile": "<rootDir>/src/setupJest.ts",
   "testResultsProcessor": "./node_modules/jest-html-reporter",
   "coverageDirectory": "<rootDir>/dist/reports/coverage",
