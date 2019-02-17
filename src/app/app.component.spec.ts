@@ -15,7 +15,7 @@ describe('AppComponent', () => {
         AppComponent
       ],
       providers: [
-        { provide: AppService, useValue: { get: null } }
+        { provide: AppService, useValue: { } }
       ]
     }).compileComponents();
   }));
@@ -27,7 +27,7 @@ describe('AppComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create the app', () => {
+  it('should create', () => {
     // verify
     expect(component).toBeDefined();
   });
@@ -37,16 +37,18 @@ describe('AppComponent', () => {
     expect(component.title).toBe('ng-jest-sample');
   });
 
-  it('onClick', fakeAsync(() => {
-    // setup
-    spyOn(appService, 'get').and.returnValue(of({ memo: 'aaaa' }));
+  describe('onClick', () => {
+    it('ok', fakeAsync(() => {
+      // setup
+      appService.get = jasmine.createSpy().and.returnValue(of({ memo: 'aaaa' }));
 
-    // exercise
-    component.onClick();
-    tick();
+      // exercise
+      component.onClick();
+      tick();
 
-    // verify
-    expect(appService.get).toHaveBeenCalled();
-    expect(component.message).toBe('aaaa');
-  }));
+      // verify
+      expect(appService.get).toHaveBeenCalled();
+      expect(component.message).toBe('aaaa');
+    }));
+  });
 });

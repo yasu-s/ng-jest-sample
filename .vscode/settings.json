@@ -12,4 +12,6 @@
   "editor.tabSize": 2,
   "files.insertFinalNewline": true,
   "typescript.tsdk": "node_modules\\typescript\\lib",
+  "tslint.alwaysShowRuleFailuresAsWarnings": true,
+  "tslint.configFile": "tslint.json",
 }

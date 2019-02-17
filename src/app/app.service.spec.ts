@@ -12,7 +12,7 @@ describe('AppService', () => {
     TestBed.configureTestingModule({
       providers: [
         AppService,
-        { provide: HttpClient, useValue: { get: null } }
+        { provide: HttpClient, useValue: { } }
       ]
     });
 
@@ -21,15 +21,15 @@ describe('AppService', () => {
   });
 
 
-  it('should create the service', () => {
+  it('should create', () => {
     // verify
     expect(service).toBeDefined();
   });
 
   describe('get', () => {
-    it('onClick', (done) => {
+    it('ok', (done) => {
       // setup
-      spyOn(http, 'get').and.returnValue(of({ memo: 'aaaa' }));
+      http.get = jasmine.createSpy().and.returnValue(of({ memo: 'aaaa' }));
 
       // exercise
       service.get().subscribe(data => {

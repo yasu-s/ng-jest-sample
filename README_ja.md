@@ -50,7 +50,7 @@ yarn test
 </tr>
 <tr>
   <td>lint</td>
-  <td> 	TSLintを実行します。</td>
+  <td>TSLintを実行します。</td>
 </tr>
 <tr>
   <td>test</td>
