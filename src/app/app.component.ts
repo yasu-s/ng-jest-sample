@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 import { AppService } from './app.service';
 
@@ -7,12 +7,16 @@ import { AppService } from './app.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'ng-jest-sample';
   message = '';
 
   constructor(private appService: AppService) {
 
+  }
+
+  ngOnInit(): void {
+    this.title = 'ng-jest-sample-2';
   }
 
   onClick(): void {

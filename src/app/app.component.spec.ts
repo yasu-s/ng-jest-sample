@@ -1,4 +1,4 @@
-import { TestBed, async, ComponentFixture, fakeAsync, tick } from '@angular/core/testing';
+import { TestBed, ComponentFixture, fakeAsync, tick } from '@angular/core/testing';
 import { of } from 'rxjs';
 
 import { AppComponent } from './app.component';
@@ -9,7 +9,7 @@ describe('AppComponent', () => {
   let fixture: ComponentFixture<AppComponent>;
   let appService: AppService;
 
-  beforeEach(async(() => {
+  beforeEach(() => {
     TestBed.configureTestingModule({
       declarations: [
         AppComponent
@@ -17,14 +17,11 @@ describe('AppComponent', () => {
       providers: [
         { provide: AppService, useValue: { } }
       ]
-    }).compileComponents();
-  }));
+    });
 
-  beforeEach(() => {
     fixture    = TestBed.createComponent(AppComponent);
     component  = fixture.componentInstance;
     appService = TestBed.get(AppService);
-    fixture.detectChanges();
   });
 
   it('should create', () => {
@@ -35,6 +32,16 @@ describe('AppComponent', () => {
   it('title', () => {
     // verify
     expect(component.title).toBe('ng-jest-sample');
+  });
+
+  describe('ngOnInit', () => {
+    it('ok', () => {
+      // exercise
+      component.ngOnInit();
+
+      // verify
+      expect(component.title).toBe('ng-jest-sample-2');
+    });
   });
 
   describe('onClick', () => {
