@@ -1,4 +1,4 @@
-import { TestBed, ComponentFixture, fakeAsync, tick } from '@angular/core/testing';
+import { TestBed, fakeAsync, tick } from '@angular/core/testing';
 import { of } from 'rxjs';
 
 import { AppComponent } from './app.component';
@@ -6,21 +6,17 @@ import { AppService } from './app.service';
 
 describe('AppComponent', () => {
   let component: AppComponent;
-  let fixture: ComponentFixture<AppComponent>;
   let appService: AppService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [
-        AppComponent
-      ],
       providers: [
+        AppComponent,
         { provide: AppService, useValue: { } }
       ]
     });
 
-    fixture    = TestBed.createComponent(AppComponent);
-    component  = fixture.componentInstance;
+    component  = TestBed.get(AppComponent);
     appService = TestBed.get(AppService);
   });
 
