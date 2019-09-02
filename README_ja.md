@@ -4,17 +4,17 @@ Angular + Jest のサンプルプロジェクトです。
 
 # 実行環境
 
-* Node.js 10.x
-* Yarn 1.12.x
+* Node.js - 10.x
+* Yarn - 1.12.x
 
 # 使用ライブラリ
 
-* TypeScript 3.2.x
-* Angular 7.2.x
-* Jest 23.6.x
-* ts-jest 23.10.x
-* jest-preset-angular 6.0.x
-* @angular-builders/jest 7.2.x
+* TypeScript - 3.5.x
+* Angular - 8.2.x
+* Jest - 24.9.x
+* ts-jest - 24.0.x
+* jest-preset-angular - 7.1.x
+* @angular-builders/jest - 8.2.x
 
 # 動作確認
 
